@@ -1,0 +1,388 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #0b0c1b;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 132, 255, 0.52), #0b0c1b), url('https://wallpapercave.com/wp/wp3797708.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar .nav-links li {
+    transition: color .2s ease;
+  }
+  
+  .navbar .nav-links li:hover {
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .hero-text {
+    width: 450px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    text-align: right;
+  }
+  
+  .hero-welcome-text {
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    margin-bottom: -10px;
+  }
+  
+  .maintext {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .description {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .maintext {
+      font-size: 40px; /* Decrease the font size for mobile devices */
+       /* Enable scrolling when text overflows */
+      -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    }
+  }
+
+  /* Contact us */
+  .support_section .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .support_section .box .img-box {
+    width: 100px;
+  }
+  
+  .support_section .box .img-box img {
+  }
+  
+  .support_section .box .detail-box {
+    text-align: center;
+    margin-top: 35px;
+    width: 85%;
+  }
+  
+  .support_section .box .detail-box h2 {
+    font-weight: bold;
+  }
+  
+  .support_section .box .detail-box p {
+    margin-top: 20px;
+  }
+    /* Contact us */
+
+    /* Features*/
+    h2{
+        font-size: 50px;
+        color:white
+    }
+    p{
+        color: white;
+      }
+    h5{
+        color: rgba(255, 255, 255, 0.822);
+    }  
+    /* Author: Puzzle_Shock1 */
+
+  .feature_section .feature_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -1%;
+  }
+      /* Author: Puzzle_Shock1 */
+
+  .feature_section .feature_container .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 300px;
+    padding: 45px 25px 15px 25px;
+    border: 1px solid #2b7afa;
+    margin: 1%;
+  }
+      /* Author: Puzzle_Shock1 */
+
+  .feature_section .feature_container .box.b-1, .feature_section .feature_container .box.b-4 {
+    width: 38%;
+  }
+  
+  .feature_section .feature_container .box.b-2, .feature_section .feature_container .box.b-3 {
+    width: 58%;
+  }
+  
+  .feature_section .feature_container .box .img-box {
+    width: 75px;
+  }
+  
+  .feature_section .feature_container .box .img-box img {
+    width: 100%;
+  }
+  
+  .feature_section .feature_container .box .detail-box {
+    margin-top: 25px;
+  }
+  
+  .feature_section .feature_container .box .detail-box h5 {
+    font-weight: bold;
+  }
+  
+  .feature_section .feature_container .box:hover h5 {
+    color: #0842a0;
+  }
+
+  
+  .feature_section .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+      /* Author: Puzzle_Shock1 */
+
+  .feature_section .btn-box a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #5793cf;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #5793cf;
+  }
+  
+  .feature_section .btn-box a:hover {
+    background-color: transparent;
+    color: #5793cf;
+  }
+
+   /* Features*/
+
+   
+  
+   .fade-in-down {
+    opacity: 0;
+    animation: fade-in-down 1s ease forwards;
+  }
+  
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+      /* Author: Puzzle_Shock1 */
+
+  .explore-btn {
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 30px #038be6a6;
+    background: #0097ee;
+    padding: 12px 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .explore-btn:hover {
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 4px 40px #003cff;
+    background: #008cff;
+  }
+    /* Author: Maj */
+
+  .pricing-plans {
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 64px;
+  }
+  
+  .pricing-card {
+    --col: #e4e4e7;
+    position: relative;
+    min-width: 360px;
+    padding: 32px;
+    padding-bottom: 96px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+    background-color: #26262620;
+    box-shadow: 0 0 32px transparent;
+    text-align: center;
+  }
+      /* Author: Maj */
+
+  .pricing-card.basic {
+    --col: #0060f0;
+}
+
+.pricing-card.standard {
+    --col: #0060f0;
+}
+
+.pricing-card.premium {
+    --col: #0060f0;
+}
+  
+  .pricing-card:hover {
+    border-color: var(--col);
+    background-color: #26262680;
+    box-shadow: 0 0 32px #171717;
+    transform: translateY(-16px) scale(1.02);
+    transition: all 0.5s ease;
+  }
+      /* Author: Maj */
+
+  .pricing-card > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  
+  .pricing-card .heading h4 {
+    padding-bottom: 12px;
+    color: var(--col);
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .pricing-card .heading p {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .price {
+    position: relative;
+    color: var(--col);
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .pricing-card .price sub {
+    position: absolute;
+    bottom: 14px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .features li {
+    padding-bottom: 16px;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+  }
+  
+  .pricing-card .features li i,
+  .pricing-card .features li strong {
+    color: #e4e4e7;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .pricing-card .features li strong {
+    padding-left: 24px;
+  }
+  
+  .pricing-card .cta-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--col);
+    background-color: var(--col);
+    color: #e4e4e7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+      /* Author: Maj */
+
+  .pricing-card .cta-btn:active {
+    background-color: transparent;
+    color: var(--col);
+    transition: all 0.3s ease;
+  }
+  
+  table{
+    color: #262626;
+  }
+
+      /* Author: Maj */
