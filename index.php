@@ -318,8 +318,9 @@ h3{
 <img class="logo" src="xz.png" width="200" height="200" alt="logo">
 
       <h1>TemplateXZ</h1>
-      <p>TemplateXZ, web marketplace that offers a wide range of high-quality HTML, CSS, and JS templates.<br>
+      <p>TemplateXZ, web marketplace where people can sell and upload web templates<br>
     <b>Register to acces templates!</b></p>
+    <p style="color: red;">Beta</p>
     <button onclick="scrollToForm()" type="button" style="border-radius: 5px; padding: 15px 20px;">Login/Register</button>
     </div>
   </div>
@@ -331,53 +332,11 @@ h3{
     }
   </script>
   <main>
-<m style="font-size: 50px;">Store</m>
-<p style="color: red;">Preview</p>
-<div class="p-4 sm:ml-64">
-      <div class="grid grid-cols-3 gap-4 mb-4">
-      <div class="product-container">
-  <div class="product-box">
-    <a href="https://betavps.pages.dev/">
-      <img src="ss.png" alt="Product Image">
-    </a>
-    <h3 class="product-title">Hosting Template<br> 1$</h3>
-    <p class="product-description">Template made for web hosting services. <br>Click on the image for a demo</p>
-  </div>
-  
-  <div class="product-box">
-    <a href="#">
-      <img src="dsc temp.png" alt="Product Image">
-    </a>
-    <h3 class="product-title">Discord Template<br>0$</h3>
-    <p class="product-description">Discord template made for communities and hosting services...</p>
 
-  </div>
-  </main>
-  <button style="display: flex; justify-content: center;" onclick="myFunction()">Show More</button>
-
-<div id="myDIV" style="display: none;">
-  <div class="product-box">
-    <a href="#">
-      <img src="dsc temp.png" alt="Product Image">
-    </a>
-    <h3 class="product-title">Discord Template<br>$0</h3>
-    <p class="product-description">Discord template made for communities and hosting services...</p>
-  </div>
-</div>
-
-<script>
-function myFunction() {
-  var div = document.getElementById("myDIV");
-  if (div.style.display === "none") {
-    div.style.display = "block";
-  } else {
-    div.style.display = "none";
-  }
-}
-</script>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+
 .mySlides {display:none;}
 </style>
 <body>
@@ -434,7 +393,7 @@ function myFunction() {
     </style>
 
     <div class="footer">
-      <p>©TemplateXZ<br>
+      <p>©TemplateXZ v0.0.1<br>
       </p>
       <p>Powered by <a href="https://planetvps.eu">Planet Vps</a></p>
 

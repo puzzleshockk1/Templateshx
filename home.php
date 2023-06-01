@@ -97,21 +97,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <a href="zx/template.php" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
                <span class="flex-1 ml-3 whitespace-nowrap">Store</span>
-               <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">10%OFF</span>
+               <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">FREE</span>
             </a>
          </li>
          <li>
-  <a href="legal/seller.pdf" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-    <i class="fas fa-money-bill text-white text-lg mr-2"></i>
-    <span class="flex-1 ml-3 whitespace-nowrap">How to sell?</span>
-  </a>
-</li>
-         <li>
-  <a href="legal/score.pdf" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-    <i class="fas fa-coins text-yellow-500 text-lg mr-2"></i>
-    <span class="flex-1 ml-3 whitespace-nowrap">Seller Score: <?=$coins?></span>
-  </a>
-</li>
+
 <li>
             <a href="https://discord.gg/nBAQNBTn2T" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
@@ -135,7 +125,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
          </p>
          <a class="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300" href="https://discord.gg/nBAQNBTn2T">Report</a>
       </div>
-      
+      <style>
+      .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+    </style>
+
+    <div class="footer">
+      <p>©TemplateXZ v0.0.1<br>
+
    </div>
 </aside>
 <div class="p-4 sm:ml-64">
@@ -233,26 +235,13 @@ p{
 </p>
 </div>
 </div>
-<h1>Owned Items:</h1>
+<h1>Owned Paid Items:</h1>
 </body>
 
 
 
 
 
-<style>
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-</style>
-
-<div class="footer">
-<p><a href="legal/seller.pdf"></a></p>
-</div> 
 
 
 </html>

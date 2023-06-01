@@ -24,7 +24,7 @@
             <div class="col-sm-3">
                 <div class="card">
                     <i class="fa fa-users  mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Users (Dead)</h4>
+                    <h4 style="color:white;">Users (Dead) idk</h4>
                     <h5 style="color:white;">
                     <?php
                         $sql="SELECT * from users where isAdmin=0";

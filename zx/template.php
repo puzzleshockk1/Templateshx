@@ -31,7 +31,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TemplateXZ - Dashboard</title>
+	<title>TemplateXZ - Store</title>
   <link rel="icon" type="image/x-icon" href="xz.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -74,17 +74,22 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     font-size: 30px;
 }
 </style>
+
 <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
    <span class="sr-only">Open sidebar</span>
    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
    </svg>
 </button>
+
+<a href="/home.php">
 <aside id="cta-button-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-700 dark:bg-gray-800">
+    <h1>TemplateXZ<p style="color: red;">beta</p></h1>
       <ul class="space-y-2 font-medium">
-      <i class="fa fa-user" aria-hidden="true"></i>
-  <?=$_SESSION['fname']?>
+
+</a>
+
          <li>
             <a href="/index.php" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
@@ -92,18 +97,18 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             </a>
          </li>
          <li>
-         <li>
-  <a href="legal/seller.pdf" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-    <i class="fas fa-money-bill text-white text-lg mr-2"></i>
-    <span class="flex-1 ml-3 whitespace-nowrap">How to sell?</span>
-  </a>
-</li>
-         <li>
   <a href="legal/score.pdf" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
     <i class="fas fa-coins text-yellow-500 text-lg mr-2"></i>
     <span class="flex-1 ml-3 whitespace-nowrap">Seller Score: <?=$coins?></span>
   </a>
 </li>
+         <li>
+  <a href="upload.php" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+    <i class="<i fas fa-upload text-blue-500 text-lg mr-2"></i>
+    <span class="flex-1 ml-3 whitespace-nowrap">Upload</span>
+  </a>
+</li>
+
 <li>
             <a href="https://discord.gg/nBAQNBTn2T" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
@@ -113,7 +118,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
          <li>
             <a href="logout.php" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
-               <span href="logout.php" class="flex-1 ml-3 whitespace-nowrap">Log out</span>
+               <span href="/logout.php" class="flex-1 ml-3 whitespace-nowrap">Log out</span>
             </a>
          </li>
       </ul>
@@ -127,37 +132,167 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
          </p>
          <a class="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300" href="https://discord.gg/nBAQNBTn2T">Report</a>
       </div>
-      
+
+  <style>
+      .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+    </style>
+
+    <div class="footer">
+      <p>©TemplateXZ v0.0.1<br>
+
+   </div>
    </div>
 </aside>
 <div class="p-4 sm:ml-64">
       <div class="grid grid-cols-3 gap-4 mb-4">
       <div class="product-container">
-  <div class="product-box">
-    <a href="https://betavps.pages.dev/">
-      <img src="ss.png" alt="Product Image">
-    </a>
-    <h3 class="product-title">Hosting Template<br> 1$</h3>
-    <p class="product-description">Template made for web hosting services. <br>Click on the image for a demo</p>
-    <button class="add-to-cart">
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=62QXP2UKNX8UU">Add to Cart</a><br>
-    </button>
-  </div>
+ 
   
-  <div class="product-box">
-    <a href="#">
-      <img src="dsc temp.png" alt="Product Image">
-    </a>
-    <h3 class="product-title">Discord Template<br>0$</h3>
-    <p class="product-description">Discord community template </p>
-    <button class="add-to-cart">
-      <a href="https://discord.new/fdm5CaAJ9rRz">Add to Cart</a><br>
-    </button>
+      <?php
+$uploadDirectory = 'uploads/';
+
+// Function to get all files in a directory
+function getFilesInDirectory($directory)
+{
+    $files = array();
+
+    if ($handle = opendir($directory)) {
+        while (($file = readdir($handle)) !== false) {
+            if (!in_array($file, array('.', '..')) && !is_dir($directory . $file)) {
+                $files[] = $file;
+            }
+        }
+        closedir($handle);
+    }
+
+    return $files;
+}
+
+// Function to get the file size in MB
+function getFileSizeInMB($file)
+{
+    $sizeInBytes = filesize($file);
+    $sizeInMB = $sizeInBytes / (1024 * 1024); // Convert bytes to MB
+    return round($sizeInMB, 2); // Round to 2 decimal places
+}
+
+// Get all folders in the upload directory
+$folders = scandir($uploadDirectory);
+$folders = array_diff($folders, array('.', '..'));
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display Page</title>
+    <style>
+        body {
+            background-color: #0b0c1b;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .file-list {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-size {
+            color: white;
+        }
+        hr.new4 {
+  border: 2px solid white;
+}
+    </style>
+
+    
+</head>
+
+<body>
+  
+    <div class="file-list">
+    <div class="flex p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+  <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+  <span class="sr-only">Info</span>
+  <div>
+    <span class="font-medium">Alert!</span> We do not check the templates uploaded by users make sure its not a virus!!
   </div>
-         </div>
-      </div>
-   </div>
 </div>
+       <h2>Free Templates</h2>
+
+       <div class="product-box">
+
+        <?php if (!empty($folders) ): ?>
+            <?php foreach ($folders as $folder): ?>
+                <?php $folderPath = $uploadDirectory . $folder; ?>
+                <?php if (is_dir($folderPath)): ?>
+                    <?php $files = getFilesInDirectory($folderPath); ?>
+                    <?php if (!empty($files)): ?>
+                        <h3><?php echo $folder; ?></h3>
+                        <ul>
+
+                            <?php foreach ($files as $file): ?>
+                                <li>
+                                <p><i class="fas fa-dollar-sign"></i>Free</p>
+                                <button class="add-to-cart">
+                                    <a href="<?php echo $folderPath . '/' . $file; ?>" target="_blank">
+                                        <?php echo $file; ?>
+
+                                    </a>
+                           
+                                    <span class="file-size">(<?php echo getFileSizeInMB($folderPath . '/' . $file); ?> MB)</span>
+                                    </button>
+                                    <hr class="new4">
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No Templates on marketplace
+            
+  <a href="upload.php" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+    <i class="<i fas fa-upload text-blue-500 text-lg mr-2"></i>
+    <span class="flex-1 ml-3 whitespace-nowrap">Upload</span>
+  </a>
+
+          </p>
+        <?php endif; ?>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
+
+
 
 <body>
 <style>
@@ -220,9 +355,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 </style>
 
 
-<div class="shadow rounded-corners w-450 p-3 text-start ">
-<p class="display-4 small-text"><i class="fa fa-user" aria-hidden="true"></i>
-  <?=$_SESSION['fname']?>
+
 </p>
 </div>
 </div>
@@ -236,19 +369,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 <?php
 ?>
 
-<style>
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-</style>
 
-<div class="footer">
-<p><a href="legal/seller.pdf">How to sell?</a></p>
-</div> 
 
 
 </html>
