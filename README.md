@@ -1,6 +1,6 @@
 # Templateshx SOON
 ![alt text](https://img.shields.io/github/directory-file-count/puzzleshockk1/templateXZ?style=flat-square)<br /> 
-### I am looking for volunteer developers if you want to help me please contact me on discord #puzzle_shock
+
 
 Templateshx is an opensource web store where people can sell their files, html templates.
 
@@ -16,3 +16,4 @@ Next, clone the Templateshx repository from GitHub using the following command:
 ```
 git clone https://github.com/puzzleshockk1/Templateshx.git 
 ```
+### I am looking for volunteer developers if you want to help me please contact me on discord #puzzle_shock 
