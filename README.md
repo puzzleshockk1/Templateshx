@@ -1,6 +1,6 @@
 # Templateshx
 ![alt text](https://img.shields.io/github/directory-file-count/puzzleshockk1/templateXZ?style=flat-square)<br /> 
-
+! Please note that this is beta version. Installation may not work right!
 
 Templateshx is an opensource web store where people can sell their files, html templates.
 
