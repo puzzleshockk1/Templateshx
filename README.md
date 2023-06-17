@@ -30,7 +30,7 @@ Create a new database and user for Templateshx. Run the following commands to lo
 sudo mysql -u root -p
 
 ```
-`
+```
 CREATE DATABASE templateshx;
 CREATE USER 'templateshxuser'@'localhost' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON templateshx.* TO 'templateshxuser'@'localhost';
@@ -38,7 +38,7 @@ FLUSH PRIVILEGES;
 EXIT;
 
 
-`
+```
 ### Configure Nginx
 ```
 sudo nano /etc/nginx/sites-available/default
