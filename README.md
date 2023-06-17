@@ -1,4 +1,4 @@
-# Templateshx SOON
+# Templateshx
 ![alt text](https://img.shields.io/github/directory-file-count/puzzleshockk1/templateXZ?style=flat-square)<br /> 
 
 
