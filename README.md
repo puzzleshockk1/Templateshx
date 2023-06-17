@@ -1,4 +1,5 @@
 # Templateshx SOON
+## I am looking for volunteer developers if you want to help me please contact me on discord #puzzle
 ![alt text](https://img.shields.io/github/directory-file-count/puzzleshockk1/templateXZ?style=flat-square)<br /> 
 Templateshx is an opensource web store where people can sell their files, html templates.
 
