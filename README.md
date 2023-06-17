@@ -8,7 +8,7 @@ Templateshx is an opensource web store where people can sell their files, html t
  apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server
 ```
 
-#Clone repo
+###Clone repo
 ```
 git clone https://github.com/puzzleshockk1/Templateshx.git 
 ```
