@@ -21,4 +21,9 @@ Next, clone the Templateshx repository from GitHub using the following command:
 ```
 git clone https://github.com/puzzleshockk1/Templateshx.git 
 ```
+### Configure Nginx
+```
+sudo nano /etc/nginx/sites-available/default
+
+```
 ### I am looking for volunteer developers if you want to help me please contact me on discord #puzzle_shock 
