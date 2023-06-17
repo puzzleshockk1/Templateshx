@@ -5,7 +5,7 @@
 Templateshx is an opensource web store where people can sell their files, html templates.
 
 [Demo](https://store.puzzleshock
-) 
+) <br
 [Discord](https://discord.gg/nBAQNBTn2T 
 ) 
 
