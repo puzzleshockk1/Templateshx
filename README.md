@@ -4,6 +4,9 @@
 
 Templateshx is an opensource web store where people can sell their files, html templates.
 
+[Demo](https://store.puzzleshock
+) 
+
 ## How to install
 ### Install Dependencies 
 First, you need to install some dependencies. Run the following commands:
