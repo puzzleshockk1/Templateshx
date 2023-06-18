@@ -18,7 +18,7 @@ First, you need to install some dependencies. Run the following commands:
 
 
 
-git clone https://github.com/puzzleshockk1/Templateshx.git 
+
 ### Clone repo
 Next, clone the Templateshx repository from GitHub using the following command:
 ```
